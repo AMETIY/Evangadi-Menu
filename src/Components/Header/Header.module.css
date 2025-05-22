@@ -11,3 +11,28 @@
     margin: 15px auto 20px;
     background-color: #ff9500;
   }
+  
+  /* Medium devices (tablets, 768px and down) */
+  @media (max-width: 768px) {
+    .title > h1 {
+      font-size: 24px;
+    }
+  
+    .title > div {
+      width: 60px;
+      margin: 12px auto 18px;
+    }
+  }
+  
+  /* Small devices (phones, 480px and down) */
+  @media (max-width: 480px) {
+    .title > h1 {
+      font-size: 20px;
+    }
+  
+    .title > div {
+      width: 50px;
+      margin: 10px auto 15px;
+    }
+  }
+  
