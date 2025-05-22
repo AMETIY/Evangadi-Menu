@@ -7,3 +7,17 @@
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Medium devices (tablets, etc., 992px and down) */
+@media (max-width: 992px) {
+  .foods-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small devices (phones, 768px and down) */
+@media (max-width: 768px) {
+  .foods-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
