@@ -1,12 +1,48 @@
-# React + Vite
+# Evangadi Food Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple food menu application that displays a list of food items. It's built using React and showcases features like a responsive layout and dynamic content rendering.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+*   Node.js (v18.x or later recommended)
+*   npm (comes with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Setup
+
+1.  Clone the repository (if you haven't already):
+    ```bash
+    git clone your-repository-url
+    cd evangadi-food-menu
+    ```
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+To start the development server, run:
+```bash
+npm run dev
+```
+This will typically open the application in your default web browser at `http://localhost:5173` (Vite's default port). Check your terminal output for the exact address.
+
+## Project Structure
+
+A brief overview of the key directories:
+
+*   `public/`: Contains static assets that are served directly (e.g., `vite.svg`, `index.html` shell).
+*   `src/`: Contains all the source code for the React application.
+    *   `src/assets/`: Typically used for static assets like images that are imported into components (if this project had one).
+    *   `src/CommonResource/`: Contains shared resources, like the `data.js` file for the menu items.
+    *   `src/Components/`: Contains the reusable React components.
+        *   `src/Components/Header/`: The header component.
+        *   `src/Components/Menu-List/`: The component responsible for displaying the list of food items.
+        *   `src/Components/Food Items/`: The component for rendering individual food items.
+    *   `src/App.jsx`: The main application component.
+    *   `src/main.jsx`: The entry point of the application, where the React app is mounted to the DOM.
+    *   `src/App.css`, `src/index.css`: Global styles.
+*   `vite.config.js`: Configuration file for Vite.
+*   `package.json`: Lists project dependencies and scripts.
